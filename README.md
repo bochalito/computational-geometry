@@ -1,4 +1,4 @@
-# 3D Convec Hull, Curvature of 2D and 3D Models
+# 3D Convex Hull, Curvature of 2D and 3D Models
 Project developed for university. The aim of this project is to write my own algorithms used in Computational Geometry.
 In the source code you can find algorithms that calculate 2D curvature, mean and gaussian curvature of 3D models and convex hull of 
 a 3D model. 
