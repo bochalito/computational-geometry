@@ -116,11 +116,11 @@ Simple3DScene::Simple3DScene()
 	const string objDir = getExePath() + m_settings.getStr("obj_dir");
 	const string objFile = getExePath() + m_settings.getStr("obj_file");
 
-	// Last parameter defines if the triangles are given CW/CCW.
-	// If the 3D model appears without shadows change that parameter.
+	// Last parameter defines if the triangles of the model are given in CCW/CW.
+	// If the 3D model appears without shadows change this parameter.
 	m_model = Mesh(objDir, objFile, "", false);
 
-	// Load obj from memory.
+	// Fortwse to polygwno apo tin mnimi
 	loadPolygonFromFile(getExePath() + POLYGON_FILENAME);
 	b_show_pts = false;
 

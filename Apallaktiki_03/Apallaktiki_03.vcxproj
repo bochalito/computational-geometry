@@ -15,7 +15,6 @@
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>Apallaktiki_03</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
-    <ProjectName>project</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -81,10 +80,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="CompGeo.h" />
+    <ClCompile Include="GeoLab_Apallaktiki_03_7858.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="GeoLab_Apallaktiki_03_7858.cpp" />
+    <ClInclude Include="GeoLab_Apallaktiki_03_7858.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
