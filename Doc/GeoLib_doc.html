@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html"  charset="utf-8" />
+<script>
+function getPageSize() {
+	var myWidth = 0, myHeight = 0;
+	if( typeof( window.innerWidth ) == 'number' ) {
+		//Non-IE
+		myWidth = window.innerWidth;
+		myHeight = window.innerHeight;
+	} else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
+		//IE 6+ in 'standards compliant mode'
+		myWidth = document.documentElement.clientWidth;
+		myHeight = document.documentElement.clientHeight;
+	} else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+		//IE 4 compatible
+		myWidth = document.body.clientWidth;
+		myHeight = document.body.clientHeight;
+	}
+	return [myHeight, myWidth];
+}
+
+function resize() {
+	var _iframe = document.getElementById("_iframe").height = getPageSize()[0] - 120;
+	var _iframe = document.getElementById("_iframe").width = getPageSize()[1] - 50;
+}
+</script>
+</head>
+
+<body onload="resize()" onresize="resize()" style="background-color: #6095B8;" >
+  <img src="vvr_lab_logo.png"/>
+  <hr/>
+  <iframe width="1000" id="_iframe" style="background-color:#FFF;" src="Geolib_doxygen/hierarchy.html" />
+</body>
+</html>
