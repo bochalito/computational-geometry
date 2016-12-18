@@ -5,7 +5,7 @@
 #include <MathGeoLib/MathGeoLib.h>
 #include "utils.h"
 #include "canvas.h"
-#include "GeoLab_Apallaktiki_03_7858.h"
+#include "CompGeo.h"
 
 #define  NOMINMAX  1// Fixes a problem on windows
 
@@ -116,8 +116,8 @@ Simple3DScene::Simple3DScene()
 	const string objDir = getExePath() + m_settings.getStr("obj_dir");
 	const string objFile = getExePath() + m_settings.getStr("obj_file");
 
-	// H teleytaia parametros kathorizei an ta trigwna dinontai se CW/CCW fora.
-	// An to 3D antikeimenou emfanizetai xwris skies, allakse ayti tin parametro.
+	// Last parameter defines if the triangles of the model are given in CCW/CW.
+	// If the 3D model appears without shadows change this parameter.
 	m_model = Mesh(objDir, objFile, "", false);
 
 	// Fortwse to polygwno apo tin mnimi
