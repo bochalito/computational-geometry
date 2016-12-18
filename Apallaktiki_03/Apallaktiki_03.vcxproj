@@ -81,10 +81,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="GeoLab_Apallaktiki_03_7858.cpp" />
+    <ClInclude Include="CompGeo.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="GeoLab_Apallaktiki_03_7858.h" />
+    <ClCompile Include="GeoLab_Apallaktiki_03_7858.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
