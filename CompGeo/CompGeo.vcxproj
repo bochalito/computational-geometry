@@ -13,7 +13,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{7FE81486-02AA-40E5-9C92-D8359B85D40D}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>Apallaktiki_03</RootNamespace>
+    <RootNamespace>CompGeo</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -80,10 +80,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="GeoLab_Apallaktiki_03_7858.cpp" />
+    <ClCompile Include="CompGeo.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="GeoLab_Apallaktiki_03_7858.h" />
+    <ClInclude Include="CompGeo.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -5,12 +5,12 @@
 #include <MathGeoLib/MathGeoLib.h>
 #include "utils.h"
 #include "canvas.h"
-#include "GeoLab_Apallaktiki_03_7858.h"
+#include "CompGeo.h"
 
 #define  NOMINMAX  1// Fixes a problem on windows
 
-#define CONFIG_FILE_PATH "../Apallaktiki_03/config.txt"
-#define POLYGON_FILENAME  "../Apallaktiki_03/polygons/polygon.txt"
+#define CONFIG_FILE_PATH "../CompGeo/config.txt"
+#define POLYGON_FILENAME  "../CompGeo/polygons/polygon.txt"
 #define MIN_POINT_DIST_PIXELS 10
 
 #define FLAG_SHOW_AXES			1
@@ -120,7 +120,7 @@ Simple3DScene::Simple3DScene()
 	// If the 3D model appears without shadows change this parameter.
 	m_model = Mesh(objDir, objFile, "", false);
 
-	// Fortwse to polygwno apo tin mnimi
+	// Load object from memory
 	loadPolygonFromFile(getExePath() + POLYGON_FILENAME);
 	b_show_pts = false;
 

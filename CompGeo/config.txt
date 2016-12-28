@@ -1,8 +1,8 @@
 ####################################################################
 ### Directory paths ################################################
 ####################################################################
-obj_dir                     =  ../Apallaktiki_03/
-obj_file                    =  ../Apallaktiki_03/b66_L2.obj
+obj_dir                     =  ../CompGeo/
+obj_file                    =  ../CompGeo/b66_L2.obj
 perspective_proj            =  1
 color_bg                    =  768E77
 color_obj                   =  454545
